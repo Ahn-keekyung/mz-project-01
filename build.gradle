@@ -9,14 +9,18 @@ group = 'com.project.first'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
-bootWar{			// war 배포 파일명
+bootJar{			// war 배포 파일명
 	archiveBaseName = 'mz-project-01'
-    archiveFileName = 'mz-project-01.war'
+    archiveFileName = 'mz-project-01.jar'
     archiveVersion = "0.0.0"
+	jar.enabled = true
 }
 
-bootWar.enabled = false
-war.enabled = true
+jar {
+   manifest {
+       attributes 'Main-Class': 'com.project.first.MzProject01Application'
+    }
+}
 
 configurations {
 	compileOnly {
