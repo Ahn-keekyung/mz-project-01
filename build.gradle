@@ -15,6 +15,9 @@ bootWar{			// war 배포 파일명
     archiveVersion = "0.0.0"
 }
 
+bootWar.enabled = false
+war.enabled = true
+
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
