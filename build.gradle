@@ -2,11 +2,18 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '2.7.8'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id 'war'
 }
 
 group = 'com.project.first'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
+
+bootWar{			// war 배포 파일명
+	archiveBaseName = 'mz-project-01'
+    archiveFileName = 'mz-project-01.war'
+    archiveVersion = "0.0.0"
+}
 
 configurations {
 	compileOnly {
@@ -16,10 +23,6 @@ configurations {
 
 repositories {
 	mavenCentral()
-}
-
-jar {
-    enabled = false
 }
 
 dependencies {
