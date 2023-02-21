@@ -15,7 +15,7 @@ bootJar{			// war 배포 파일명
 }
 
 jar {
-	jar.enabled = false
+	enabled = false
 	manifest {
 		attributes 'Main-Class': 'com.project.first.MzProject01Application'
 	}
