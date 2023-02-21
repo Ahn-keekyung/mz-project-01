@@ -12,13 +12,13 @@ bootJar{			// war 배포 파일명
 	archiveBaseName = 'mz-project-01'
     archiveFileName = 'mz-project-01.jar'
     archiveVersion = "0.0.0"
-	jar.enabled = true
 }
 
 jar {
-   manifest {
-       attributes 'Main-Class': 'com.project.first.MzProject01Application'
-    }
+	jar.enabled = false
+	manifest {
+		attributes 'Main-Class': 'com.project.first.MzProject01Application'
+	}
 }
 
 configurations {
