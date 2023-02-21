@@ -25,7 +25,7 @@ public class BitcoinController {
 
     private final APIService bitcoinService;
 
-    @ApiOperation(value = "[RestTemplate] 코인 리스트 정보")
+    @ApiOperation(value = "[RestTemplate] 코인 리스트 정보1")
     @GetMapping(value = "/rest/coinList")
     public List<Coin> coinInfo(){
         return bitcoinService.getCoinInfo();
